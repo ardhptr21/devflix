@@ -1,8 +1,16 @@
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+
 const App = () => {
   return (
-    <div className="flex justify-center items-center h-screen">
-      <h1 className="text-2xl">Devflix - Netflix Clone</h1>
-    </div>
+    <>
+      <header>
+        <Navbar />
+      </header>
+      <main>
+        <Home />
+      </main>
+    </>
   );
 };
 
