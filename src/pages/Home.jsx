@@ -1,7 +1,9 @@
+import Card from '../components/Card';
+
 const Home = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative h-screen">
         <img
           src="https://wallpapersmug.com/download/1600x900/7ac8a5/spider-man-movie-2019-far-from-home.jpg"
           alt="thor"
@@ -27,6 +29,42 @@ const Home = () => {
             </svg>{' '}
             See movie
           </button>
+        </div>
+        <div className="absolute bottom-0 bg-gradient-to-b from-transparent to-slate-900 h-60 w-full"></div>
+      </div>
+
+      <div className="bg-slate-900 pt-10">
+        <ul className="flex flex-row justify-between items-center max-w-xl m-auto border-2 border-yellow-300 px-5 py-2 rounded-xl">
+          <li className="text-yellow-300 uppercase font-bold cursor-pointer">Random</li>
+          <li className="text-white uppercase font-medium cursor-pointer">Popular</li>
+          <li className="text-white uppercase font-medium cursor-pointer">Recent</li>
+        </ul>
+
+        <div className="holder mx-auto w-10/12 grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-10">
+          <Card
+            poster="https://static.wikia.nocookie.net/spongebob/images/5/55/Sponge_on_the_Run_2nd_Poster.png"
+            title="Spongebob Squarepants"
+            release="2019"
+            rating="8.5"
+          />
+          <Card
+            poster="https://static.wikia.nocookie.net/spongebob/images/5/55/Sponge_on_the_Run_2nd_Poster.png"
+            title="Spongebob Squarepants"
+            release="2019"
+            rating="8.5"
+          />
+          <Card
+            poster="https://static.wikia.nocookie.net/spongebob/images/5/55/Sponge_on_the_Run_2nd_Poster.png"
+            title="Spongebob Squarepants"
+            release="2019"
+            rating="8.5"
+          />
+          <Card
+            poster="https://static.wikia.nocookie.net/spongebob/images/5/55/Sponge_on_the_Run_2nd_Poster.png"
+            title="Spongebob Squarepants"
+            release="2019"
+            rating="8.5"
+          />
         </div>
       </div>
     </>
